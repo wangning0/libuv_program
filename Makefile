@@ -21,3 +21,6 @@ uvtee: uvtee.c
 
 onchange: onchange.c
 	gcc $(CFLAGS) -o onchange onchange.c $(UV_LIB) $(LIBS)
+
+tcp-echo-server: tcp-echo-server.c
+	gcc $(CFLAGS) -o tcp-echo-server tcp-echo-server.c $(UV_LIB) $(LIBS)
