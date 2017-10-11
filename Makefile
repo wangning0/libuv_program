@@ -18,3 +18,6 @@ uvcat: uvcat.c
 
 uvtee: uvtee.c
 	gcc $(CFLAGS) -o uvtee uvtee.c $(UV_LIB) $(LIBS)
+
+onchange: onchange.c
+	gcc $(CFLAGS) -o onchange onchange.c $(UV_LIB) $(LIBS)
