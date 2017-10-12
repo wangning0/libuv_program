@@ -33,3 +33,6 @@ dns: dns.c
 
 interfaces: interfaces.c
 	gcc $(CFLAGS) -o interfaces interfaces.c $(UV_LIB) $(LIBS)
+
+thread-create: thread-create.c
+	gcc $(CFLAGS) -o thread-create thread-create.c $(UV_LIB) $(LIBS)
