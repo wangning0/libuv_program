@@ -24,3 +24,12 @@ onchange: onchange.c
 
 tcp-echo-server: tcp-echo-server.c
 	gcc $(CFLAGS) -o tcp-echo-server tcp-echo-server.c $(UV_LIB) $(LIBS)
+
+get-ip: get-ip.c
+	gcc $(CFLAGS) -o get-ip get-ip.c $(UV_LIB) $(LIBS)
+
+dns: dns.c
+	gcc $(CFLAGS) -o dns dns.c $(UV_LIB) $(LIBS)
+
+interfaces: interfaces.c
+	gcc $(CFLAGS) -o interfaces interfaces.c $(UV_LIB) $(LIBS)
