@@ -36,3 +36,18 @@ interfaces: interfaces.c
 
 thread-create: thread-create.c
 	gcc $(CFLAGS) -o thread-create thread-create.c $(UV_LIB) $(LIBS)
+
+idle-basic: idle-basic.c
+	gcc $(CFLAGS) -o idle-basic idle-basic.c $(UV_LIB) $(LIBS)
+
+locks: locks.c
+	gcc $(CFLAGS) -o locks locks.c $(UV_LIB) $(LIBS)
+
+queue-work: queue-work.c
+	gcc $(CFLAGS) -o queue-work queue-work.c $(UV_LIB) $(LIBS)
+
+queue-cancel: queue-cancel.c
+	gcc $(CFLAGS) -o queue-cancel queue-cancel.c $(UV_LIB) $(LIBS)
+
+progress: progress.c
+	gcc $(CFLAGS) -o progress progress.c $(UV_LIB) $(LIBS)
